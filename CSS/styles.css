@@ -68,3 +68,30 @@
     background: #000;
 } 
 
+/* Soy maxi Aguirre */
+
+#me {
+    display: flex;
+}
+
+.content-left {
+    display: flex;
+    width: 50%;
+}
+
+.content-img-me {
+    margin: 50px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    border-radius: 25px;
+}
+
+.content-img-me img {
+    height: 100%;
+    border-radius: 25px;
+}
+
+.content-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
