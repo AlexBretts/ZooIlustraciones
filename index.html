@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo Ilustraciones</title>
+
+    <!-----------------------Estilos------------------------->
+    <link rel="stylesheet" href="CSS/materialize.min.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/menu_corner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="CSS/normalize.css">
+</head>
+    <!-----------------------Body----------------------------->
+<body id="myBody">
+    <!------------------------------Menu----------------------->
+    <div class="menuCircle">
+    </div>
+    <div class="menu-wrap">
+        <div class="menu">
+            <div class="link-list">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Especies</a></li>
+                <li><a href="#">Amenazas</a></li>
+                <li><a href="#">Contacto</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="menuHolder">
+        <button class="c-hamburger c-hamburger--htx" id="open-button">
+            <span>toggle menu</span>
+        </button>
+    </div>
+    <!------------------------Logo--------------------->
+    <header id="inicio">
+        <div class="logo">
+            <div class="logo-img">
+                <img src="img/Sin título2.png" alt="Logo">
+            </div>
+            <div class="logo-txt">
+                
+            </div>
+        </div>
+    </header>
+    
+    <!--------------------Carrousel-----------------------> 
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h1 class="titulo center-aling">Ilustracion cientifica + Arte naturalista</h1>
+                    <div class="carousel center-aling">
+                        <div class="carousel-item">
+                            <img src="img/loro-pecho-vinoso.jpeg" alt="Loro de pecho vinoso">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/condor-selva.jpeg" alt="Condor de selva">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/Cabeza-serpiente.jpeg" alt="Cabeza de serpiente">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/bigua.jpeg" alt="Bigua">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/nutria-grande2.jpeg" alt="Nutria grande 2">
+                        </div>
+                    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---------------------Acerca de mi------------------>
+    <section class="me">
+
+    </section> 
+    <script>
+        (function() {
+          "use strict";
+      
+          var toggles = document.querySelectorAll(".c-hamburger");
+      
+          for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+          };
+      
+          function toggleHandler(toggle) {
+            toggle.addEventListener( "click", function(e) {
+              e.preventDefault();
+              var body = document.getElementById("myBody");
+              if (body.classList.contains("show-menu")) {
+                body.classList.remove("show-menu");
+              } else {
+                body.classList.add("show-menu");
+              }
+              (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+            });
+          }
+      
+        })();
+      </script>
+      <script src="JS/materialize.min.js"></script>
+      <script type="text/javascript" src="JS/main.js"> </script>
+</body>
+</html>
