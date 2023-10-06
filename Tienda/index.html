@@ -2,11 +2,66 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=
-    , initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zoo Ilustraciones - Tienda</title>
+    
+    <!-----------------------Estilos------------------------->
+    <link rel="stylesheet" href="/CSS/materialize.min.css">
+    <link rel="stylesheet" href="/CSS/styles.css">
+    <link rel="stylesheet" href="/CSS/menu_corner.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="/CSS/normalize.css">
+
 </head>
-<body>
+<body id="myBody">
+
+    <!-------------------------Menu---------------------------->
+    <div class="menuCircle">
+    </div>
+    <div class="menu-wrap">
+        <div class="menu">
+            <div class="link-list">
+                <li><a href="/index.html">Inicio</a></li>
+                <li><a href="/Especies/index.html">Especies</a></li>
+                <li><a href="/Amenazas/index.html">Amenazas</a></li>
+                <li><a href="mailto:">Contacto</a></li>
+            </div>
+        </div>
+    </div>
+    <div class="menuHolder">
+        <button class="c-hamburger c-hamburger--htx" id="open-button">
+            <span>toggle menu</span>
+        </button>
+    </div>
+
     <h1>Pagina en construccion</h1>
+
+    <!---------------------------Boton de Menu---------------------->
+     <script>
+        (function() {
+          "use strict";
+        
+          var toggles = document.querySelectorAll(".c-hamburger");
+        
+          for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+          };
+          
+          function toggleHandler(toggle) {
+            toggle.addEventListener( "click", function(e) {
+              e.preventDefault();
+              var body = document.getElementById("myBody");
+              if (body.classList.contains("show-menu")) {
+                body.classList.remove("show-menu");
+              } else {
+                body.classList.add("show-menu");
+                }
+                (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+            });
+            }
+          
+        })();
+        </script>
+    
 </body>
 </html>
