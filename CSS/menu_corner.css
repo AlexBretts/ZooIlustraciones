@@ -43,7 +43,7 @@
     -webkit-border-radius: 22px;
     border-radius: 22px;
     -khtml-border-radius: 22px;
-    background-color:#a3a3a3;
+    background-color:#9099A2;
     position:fixed;
     top: 19px;
     right:18px;
@@ -188,6 +188,7 @@
       letter-spacing:2px;
       padding-top:65px;
       padding-left:20%;
+      font-family: 'Lato', sans-serif;
   }
   .link-list li {list-style:none;}
   .link-list a:link {color:#ffffff; text-decoration:none;}
@@ -203,7 +204,7 @@
       padding: 0;
       border: none;
       color: #ffffff;
-      background-color:#a3a3a3;
+      background-color:#9099A2;
          width:49px;
          height:49px;
       -moz-border-radius: 25px;
@@ -223,7 +224,7 @@
   .menu-wrap {
       position: fixed;
       z-index: 9999999999;
-      background-color:#a3a3a3;
+      background-color:#9099A2;
       -webkit-transition: width 0.3s, height 0.3s;
       transition: width 0.3s, height 0.3s;
       width: 0;
